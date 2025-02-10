@@ -1,35 +1,45 @@
-WordPress Plugin: Block List Shortcode.
+# 📦 WordPress Plugin: Block List Shortcode
 
-This plugin allows users to display a list of blocks that can be inserted into WordPress content using a shortcode.
+## 📌 Overview
+This plugin enables users to **display a list of blocks** within WordPress content using a **shortcode**. It provides an **admin panel** for managing blocks and integrates with **custom post types**.
 
-Key Features:
+## ✨ Key Features
+1. **Admin Panel Integration**:
+   - Adds a new **"Blocks"** menu item to the WordPress **Admin Panel**.
+   - Users can **manage, add, and edit** custom blocks.
 
-1. Admin Panel Integration:
-A new "Blocks" menu item has been added to the WordPress admin panel.
-This menu allows users to manage custom blocks.
+2. **Custom Post Type - `blocks_ol`**:
+   - Registers a new **post type (`blocks_ol`)** to store block data.
+   - Each block has a **status** to determine its visibility.
 
-2. Custom Post Type - blocks_ol:
-The plugin registers a new post type called blocks_ol, which stores block data.
-Each block has a status that determines whether it should be displayed in the list.
+3. **Metadata & Custom Fields**:
+   - Each block includes **additional metadata fields**.
+   - These fields define **how and when** the block should be used.
 
-4. Metadata & Custom Fields:
-Each block entry has additional metadata fields.
-These fields help define how and when the block should be used.
+4. **Shortcode Functionality**:
+   - Users can insert a **shortcode** to display blocks dynamically.
+   - The block list is rendered on the frontend **based on its status**.
 
-5. Shortcode Functionality:
-A shortcode can be added to display the list of blocks on the front end.
-Users can insert the shortcode into pages or posts to render the block list dynamically.
+## 🔄 How It Works
 
-How It Works:
-1. Admin Panel Usage:
-Go to the WordPress Admin Panel.
-Click on "Blocks" in the menu.
-Add or edit blocks with relevant metadata.
+### 1️⃣ Admin Panel Usage:
+- Navigate to the **WordPress Admin Panel**.
+- Click on **"Blocks"** in the menu.
+- **Add or edit** blocks, assigning metadata as needed.
 
-2. Adding Blocks to the Frontend:
-Insert the shortcode [your_shortcode_here] into any post or page.
-The shortcode will output a list of available blocks based on their status.
+### 2️⃣ Adding Blocks to the Frontend:
+- Insert the shortcode into any **post or page**:
+  ```sh
+  [your_shortcode_here]
+The block list will be displayed dynamically.
 
-3. Conditional Display Logic:
-Blocks are displayed dynamically depending on their assigned status.
-Only blocks that meet the defined conditions will appear on the frontend.
+### 3️⃣ Conditional Display Logic:
+- Only blocks with an active status will be shown.
+- The plugin ensures blocks are displayed dynamically based on predefined conditions.
+  
+## 🛠️ Installation
+- Upload the plugin to your /wp-content/plugins/ directory.
+- Activate it from the WordPress Plugins menu.
+- Start adding and managing blocks via the admin panel.
+
+📌 **Author**: _Olha Tkachiv_  
